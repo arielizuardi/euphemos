@@ -5,6 +5,7 @@ class FeedbackPresenter:
                  batch,
                  year,
                  session,
+                 presenter,
                  participant,
                  participant_date,
                  group,
@@ -24,6 +25,7 @@ class FeedbackPresenter:
         self.batch = batch
         self.year = year
         self.session = session
+        self.presenter = presenter
         self.participant = participant
         self.participant_date = participant_date
         self.group = group
@@ -44,6 +46,7 @@ class FeedbackPresenter:
             "batch": self.batch,
             "year": self.year,
             "session": self.session,
+            "presenter": self.presenter,
             "participant": self.participant,
             "participant_date": self.participant_date,
             "grouo": self.group,

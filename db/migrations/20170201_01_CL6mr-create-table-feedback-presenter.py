@@ -12,6 +12,7 @@ steps = [
           `batch` int(11) DEFAULT NULL, \
           `year` int(11) DEFAULT NULL, \
           `session` int(11) DEFAULT NULL, \
+          `presenter` varchar(100) DEFAULT NULL, \
           `participant` varchar(100) DEFAULT NULL, \
           `participant_date` varchar(100) DEFAULT NULL, \
           `group` varchar(255) DEFAULT NULL, \
