@@ -29,6 +29,18 @@ def seed(repository, feedback_presenter):
         conn.close()
 
 
+def test_store(repository):
+    t = datetime.now()
+    f1 = FeedbackPresenter(batch=1, year=2016, session=5,
+                           presenter='Juferson', participant='Arie', participant_date='Rasuna 1',
+                           group='1 Arie Ardaya L', penguasaan_materi=5, sistematika_penyajian=4,
+                           metode_penyajian=3, pengaturan_waktu=2, penggunaan_alat_bantu=5,
+                           nilai_keseluruhan=4, created_at=t)
+    result = repository.store(f1)
+    assert result is not None
+    assert result._id is not None
+
+
 def test_fetch(repository):
 
     t = datetime.now()

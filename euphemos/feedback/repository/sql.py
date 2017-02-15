@@ -10,7 +10,10 @@ class SQLRepository(Repository):
         self.sql_engine = sql_engine
 
     def store(self, feedback_presenter):
-        pass
+        conn = self.sql_engine.connect()
+        result = conn.execute(feedback_presenter_table.insert(), feedback_presenter.to_dict())
+        feedback_presenter._id = result.inserted_primary_key
+        return feedback_presenter
 
     def fetch(self, session, batch, year, presenter=None):
         conn = self.sql_engine.connect()
