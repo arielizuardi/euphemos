@@ -1,6 +1,7 @@
 from euphemos.report.presenter_evaluation import PresenterEvaluationReport
 from euphemos.container import container
 
+
 def get_report(session, batch, year, presenter=None):
     """
     Get report for following session, batch, year
@@ -8,7 +9,7 @@ def get_report(session, batch, year, presenter=None):
         session(int): The session
         batch(int): The batch
         year (int): The year
-        presenter (string): The presenter, could be empty
+        presenter(str): The presenter, could be empty
 
     Returns:
         euphemos.report.presenter_evaluation.PresenterEvaluationReport

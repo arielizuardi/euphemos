@@ -1,5 +1,6 @@
 from euphemos.exceptions import ContainerPropertyAlreadySet
 
+
 class Container:
     @property
     def feedback_presenter_repository(self):
@@ -21,3 +22,5 @@ class Container:
             raise ContainerPropertyAlreadySet
 
         setattr(self, '_feedback_presenter_repository', repository)
+
+container = Container()

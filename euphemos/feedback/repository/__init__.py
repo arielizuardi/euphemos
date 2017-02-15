@@ -1,26 +1,26 @@
 class Repository:
+
     def store(self, feedback_presenter):
-       """
-       Store feedback presenter
-       Args:
-           feedback_presenter (euphemos.feedback_presenter.FeedbackPresenter) : FeedbackPresenter to be stored
+        """
+        Store feedback presenter
+        Args:
+            feedback_presenter (euphemos.feedback_presenter.FeedbackPresenter) : FeedbackPresenter to be stored
 
-       Returns:
+        Returns:
             euphemos.feedback_presenter.FeedbackPresenter
+        """
+        raise NotImplementedError
 
-       """
-       raise NotImplementedError
-
-    def fetch(self, session, batch, year):
+    def fetch(self, session, batch, year, presenter=None):
         """
         Fetch feedback presenter
         Args:
             session:
             batch:
             year:
+            presenter:
 
         Returns:
             list of euphemos.feedback_presenter.FeedbackPresenter
         """
         raise NotImplementedError
-

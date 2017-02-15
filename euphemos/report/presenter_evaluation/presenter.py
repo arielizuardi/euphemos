@@ -37,7 +37,7 @@ class PresenterEvaluationReport:
             "avg_sistematika_penyajian" : self.avg_sistematika_penyajian,
             "avg_metode_penyajian": self.avg_metode_penyajian,
             "avg_pengaturan_waktu": self.avg_pengaturan_waktu,
-            "avg_penggunaan_alat_bantu": self.avg_penggunaan_alat_bantu
+            "avg_penggunaan_alat_bantu": self.avg_penggunaan_alat_bantu,
             "positive_comment": self.positive_comment,
             "improvement_comment": self.improvement_comment
         }
