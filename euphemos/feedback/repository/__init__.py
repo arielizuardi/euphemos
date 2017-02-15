@@ -24,3 +24,11 @@ class Repository:
             list of euphemos.feedback_presenter.FeedbackPresenter
         """
         raise NotImplementedError
+
+    def fetchall(self):
+        """
+            Fetch all data in the storage
+        Returns:
+            list of euphemos.feedback_presenter.FeedbackPresenter
+        """
+        raise NotImplementedError

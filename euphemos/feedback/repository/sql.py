@@ -27,6 +27,9 @@ class SQLRepository(Repository):
 
         return [unmarshal(row) for row in sql_result]
 
+    def fetchall(self):
+        pass
+
 
 def unmarshal(row):
     feedback_presenter = FeedbackPresenter(
