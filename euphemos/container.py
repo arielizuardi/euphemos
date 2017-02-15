@@ -3,6 +3,27 @@ from euphemos.exceptions import ContainerPropertyAlreadySet
 
 class Container:
     @property
+    def db_connection(self):
+        """
+
+        Returns:
+
+        """
+        return getattr(self, '_db_connection', None)
+
+    @db_connection.setter
+    def db_connection(self, db_conn):
+        """
+
+        Returns:
+
+        """
+        if self.db_connection is not None:
+            raise ContainerPropertyAlreadySet
+
+        setattr(self, '_db_connection', db_conn)
+
+    @property
     def feedback_presenter_repository(self):
         """
         Returns:
