@@ -1,0 +1,2 @@
+class ContainerPropertyAlreadySet(Exception):
+    pass

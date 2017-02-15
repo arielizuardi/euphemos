@@ -11,3 +11,16 @@ class Repository:
        """
        raise NotImplementedError
 
+    def fetch(self, session, batch, year):
+        """
+        Fetch feedback presenter
+        Args:
+            session:
+            batch:
+            year:
+
+        Returns:
+            list of euphemos.feedback_presenter.FeedbackPresenter
+        """
+        raise NotImplementedError
+
