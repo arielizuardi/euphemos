@@ -1,7 +1,7 @@
 class FeedbackPresenter:
 
     def __init__(self,
-                 _id=None,
+                 _id,
                  batch,
                  year,
                  session,
@@ -17,7 +17,7 @@ class FeedbackPresenter:
                  nilai_keseluruhan,
                  positive_comment=None,
                  wish_comment=None,
-                 created_at,
+                 created_at=None,
                  updated_at=None
                  ):
 

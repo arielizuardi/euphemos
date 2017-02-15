@@ -11,6 +11,7 @@ class PresenterEvaluationReport:
             avg_metode_penyajian,
             avg_pengaturan_waktu,
             avg_penggunaan_alat_bantu,
+            overall,
             positive_comment,
             improvement_comment
     ):
@@ -23,6 +24,7 @@ class PresenterEvaluationReport:
         self.avg_metode_penyajian = avg_metode_penyajian
         self.avg_pengaturan_waktu = avg_pengaturan_waktu
         self.avg_penggunaan_alat_bantu = avg_penggunaan_alat_bantu
+        self.overall = overall
         self.positive_comment = positive_comment
         self.improvement_comment = improvement_comment
 
@@ -38,6 +40,7 @@ class PresenterEvaluationReport:
             "avg_metode_penyajian": self.avg_metode_penyajian,
             "avg_pengaturan_waktu": self.avg_pengaturan_waktu,
             "avg_penggunaan_alat_bantu": self.avg_penggunaan_alat_bantu,
+            "overall": self.overall,
             "positive_comment": self.positive_comment,
             "improvement_comment": self.improvement_comment
         }
